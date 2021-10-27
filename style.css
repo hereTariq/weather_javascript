@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-145deg, #8B819B, #ffd6d6);
+    flex-direction: column;
+
+}
+
+.form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.form input[type="text"] {
+    padding: 15px;
+    padding-left: 20px;
+    font-size: 15px;
+    width: 300px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px #ffffff88;
+    border-radius: 15px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.473);
+}
+
+input[type="text"]::placeholder {
+    color: #fff;
+}
+
+.form #searchBtn {
+    padding: 15px;
+    cursor: pointer;
+    margin-left: -50px;
+    width: 20px;
+    height: 18px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(255, 246, 230, 0.568);
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.3);
+    width: 90%;
+    max-width: 500px;
+    height: 250px;
+    border-radius: 20px;
+
+}
+
+.container .row {
+    display: flex;
+    height: 80%;
+}
+
+.row .col {
+    width: 40%;
+}
+
+.row .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.row .left img {
+    /* margin-top: 30px; */
+    width: 100px;
+}
+
+.row .left .weather-desc {
+    font-size: 25px;
+    margin-left: 25px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-weight: bolder;
+}
+
+.row .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.row .right .city {
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.row .right .temp {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.473);
+    font-family: 'Poppins', sans-serif;
+}
+
+.bottom .humidity,
+.bottom .pressure,
+.bottom .wind-speed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
